@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- <script type="text/javascript" src="test.js"></script> -->
+<title>Insert title here</title>
+</head>
+<body>
+<p>test</p>
+
+<!-- ポップアップ -->
+<script>alert("Hello!!");</script>
+
+
+<script type="text/javascript">
+<!-- これで直接書ける-->
+document.write('JavaScriptコード');
+</script>
+
+<!-- 識別用の条件式 -->
+<script type="text/javascript" src="test2.js" ></script>
+
+<form name="sample">
+    数値を入力して「OKボタン」をクリックすると・・・<br>
+    <input type="text" id="sample" size="8">
+    <input type="button" value="OK" onclick="judgement()">
+</form>
+
+
+
+<!-- jsから読み込み
+<p><script type="text/javascript" src="test.js"></script></p> -->
+
+<br/>
+
+<button id="btn">入力フォーム</button>
+
+<script>
+
+const btn =document.getElementById('btn');
+
+	btn.addEventListener('click',function(){
+
+		const text=prompt('A,B,Cのいずれかを入力');
+
+		switch(text){
+
+		case 'A':
+			alert('Aです');
+			break;
+
+		case 'B':
+			alert('Bです');
+			break;
+
+		case 'C':
+			alert('Cです');
+			break;
+
+		default:
+			alert('その他');
+		}
+	});
+
+
+
+</script>
+
+</body>
+</html>
