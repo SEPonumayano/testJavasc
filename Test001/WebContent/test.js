@@ -1,4 +1,4 @@
-
+'use strict';
 /**
  * alert("Hello World!");
  * console.log("aaa");
@@ -39,3 +39,4 @@ document.write(hairetsu+"<br>");
 hairetsu.unshift('なし');
 
 document.write(hairetsu+"<br>");
+
